@@ -3,14 +3,17 @@ import Image from 'next/image'
 import Header from './Header/Header'
 import Main from './Main'
 import { url } from 'inspector'
+import { Head } from 'next/document'
 
 
 
 export default function HomePage() {
     return (
-<div style={{backgroundImage: 'url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg")'}}>
-            
+
+        <div>
+
             <Header/>
+            
             <Main/>
      
         </div>
