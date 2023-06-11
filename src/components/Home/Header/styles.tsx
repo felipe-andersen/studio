@@ -6,39 +6,30 @@ const Div = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 
     width: 100%;
+    height: 114px;
     box-sizing: border-box;
     display: flex;
     border-bottom: none; //1px solid whitesmoke;
     font-size: 16px;
     background: white;
     color: black;
-
+    margin: 0 0 12px 0;
+    padding: 8px 24px 8px 24px;
+   
     flex-direction: column;
 
     div:nth-child(1) {
-        background: rgba(235, 235, 235, 1);
-        width: 100%;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        padding: 0 24px;
-        font-size: 14px;
-        gap:12px;
-        border-bottom: 1px solid rgba(235, 235, 235, 1); 
-        border-top: 1px solid rgba(235, 235, 235, 1);    
-    }
-
-    div:nth-child(2) {
         box-sizing: border-box;
-        padding: 0 24px;
         display: flex;
-        height: 108px;
-        justify-content: space-between;
+        height: 46px;
+        justify-content: space-around;
         align-items: center;
-        background: transparent;
+        background: orange;
         width: 100%;
+        position: relative;
        
         .size {
+            display: none;
             box-sizing: border-box;
             padding: 0 24px;
             height: 50px;
@@ -51,53 +42,41 @@ const Div = styled.div`
             white-space: nowrap;
         }
 
-        div:nth-child(1) {
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            background: transparent;
-            border: none;
-
-            i {
-                width: 250px;
-            }
-        }
-
         form {
-  
+            width: 100%;
             box-sizing: border-box;
-            padding: 4px;
+            height: 46px;
             display: flex;
             align-items: center;
             border-radius: 5px;
             border: 1px solid rgba(235, 235, 235, 1);
-            height: 45px;
-            background: rgba(246,246,246,1);
-
-            input {
-                background: transparent; 
-            }
-
+            background: rgba(246,246,246,0.5);
+    
+            justify-content: space-around;
+            position: absolute;
+            margin: 100px 0 0 0;
+    
+    
             i {
-                background: transparent;
+                background: blue;
                 border-radius: 5px;
-                height: 100%;
-
+                height: 46px;
+                width: 46px;
+                overflow: hidden;
+    
                 svg {
-                     transform: scale(70%);
-                     fill: grey;
+                        transform: scale(70%);
+                        fill: grey;
                 }
             }
-
+    
             input {
                 height: 100%;
-                width: 400px;
+                background: red; 
                 outline: transparent;
-                margin: 0 0 0 4px;
+                width: 85%;
             }
         }
-
-  
 
         .container-cart {
             gap: 12px;
@@ -107,9 +86,9 @@ const Div = styled.div`
             white-space: nowrap;
             background: transparent;
 
-            button:nth-child(1) {
+            button {
                 svg {
-                    transform: scale(70%);
+                    transform: scale(46%);
                 }
             }
         }
@@ -124,6 +103,40 @@ const Div = styled.div`
 
         i {
         
+        }
+    }
+
+    form {
+        width: 100%;
+        box-sizing: border-box;
+        height: 46px;
+        display: none;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid rgba(235, 235, 235, 1);
+        background: rgba(246,246,246,0.5);
+        margin: 8px 0 0 0;
+        justify-content: space-around;
+
+
+        i {
+            background: blue;
+            border-radius: 5px;
+            height: 46px;
+            width: 46px;
+            overflow: hidden;
+
+            svg {
+                    transform: scale(70%);
+                    fill: grey;
+            }
+        }
+
+        input {
+            height: 100%;
+            background: red; 
+            outline: transparent;
+            width: 85%;
         }
     }
 

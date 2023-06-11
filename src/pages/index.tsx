@@ -1,6 +1,6 @@
 
 import Header from '@/components/Home/Header/Header'
-import HomePage from '@/components/Home/Home'
+import HomePage from '@/components/Home'
 import Head from 'next/head'
 
 //ok

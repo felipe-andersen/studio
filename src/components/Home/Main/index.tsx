@@ -12,11 +12,9 @@ const categoryes = [
     {category: "black & white"},
     {category: "dinossauros"},
     {category: "dourados"},
-    {category: "latters"},
-    {category: "latters"},
-    {category: "lettering"},
-    {category: "lettering"},
+    {category: "dourados"},
 ]
+
 
 export default function Main() {
 
@@ -25,7 +23,7 @@ export default function Main() {
 
             <Div>
 
-                <span>Artframe/Home</span>
+                <span><p>Artframe/Home</p></span>
 
                 <div>
 
@@ -41,8 +39,6 @@ export default function Main() {
                     </div>
 
                     <div>
-                        <span>compre por kit e pague menos</span>
-                        <span>compre por kit e pague menos</span>
                     </div>
 
                 </div>
@@ -55,8 +51,8 @@ export default function Main() {
                 
                 */}
 
-                <section className="options">
-                    <h2>Quadros em diversos modelos a preços baixos</h2>
+                <section className="options section">
+                    <h2 >Quadros em diversos modelos a preços baixos</h2>
                     <div>
                         <div>
                             <div></div>
@@ -73,9 +69,15 @@ export default function Main() {
                     </div>
                 </section>
 
-                <section>
+                <section className="section">
 
-                    <h2>Novidades. <span>Veja nosos lançamentos</span></h2>
+                    <span>
+                        <span>
+                        <h2 className="h2">Novidades. <span>Veja nossos lançamentos</span></h2>
+                        </span>
+                       
+                        <a href="wwww.google.com">Ver mais</a>
+                    </span>
 
                     <div className="btns">
 
@@ -144,9 +146,13 @@ export default function Main() {
 
                 </section>
 
-                <section>
+                <section className="section">
 
-                    <h2>Estilo boho</h2>
+                    <a href="wwww.google.com">
+                        <h2 className="h2">Estilo boho</h2>
+                        <span>Ver mais</span>
+                    </a>
+
 
                     <div className="btns">
 
@@ -211,58 +217,100 @@ export default function Main() {
 
                 </section>
 
-                <div className="banner"> 
-                    <div>
+                <section className="banner section" > 
+                    <picture>
+                        <img/>
                         
-                    </div>
+                    </picture>
 
-                </div>
+                </section>
 
-                <div className="category">
-                    <h2>Categorias</h2>
+                <section className="category section">
+                    <h2 className="h2">Categorias</h2>
                     <ul>
                         {
                             categoryes.map(i => {
                                 return (
                                     <li>
-                                        <picture><img src={i.category}/></picture>
+                                        <picture><img src={"https://cdn4.oqueeoquee.com/wp-content/uploads/2012/05/imagem-em-movimento-1.jpg"}/></picture>
                                         <span about="Name of category">{i.category}</span>
                                     </li>
                                 )
                             })
                         }
                     </ul>
-                </div>
-
-                <div>
-                    Promoção
-                </div>
-
-                <div>
-                    Depoimentos
-                </div>
-
-                <div>
-                Pinterest
-
-                <p>Dúvidas Frequentes</p>
-
-                <p>A compra é confiável?</p>
-                
-                </div>
-
-                <div>
-
-                    Copyright © 2023 Apple Inc. All rights reserved. <br/>
-                    Privacy Policy Terms of Use Site Map
-
-                    language: Português (Brasil)
-
-                    Contry: Brasil
-
-                </div>
+                </section>
 
 
+                <section className="depoiment section">
+                    <h2 className="h2">Depoimentos</h2>
+                </section>
+
+                <section className="details section">
+
+                    <h2 className="h2">Dúvidas Frequentes</h2>
+
+                    <ul className="details-container">
+                    
+                        <li>
+
+                            <details>
+
+                                <summary>A compra é confiável?</summary>
+
+                                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+
+                            </details>
+
+                        </li>
+
+                        <li>
+
+                            <details>
+
+                                <summary>A compra é confiável?</summary>
+
+                                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+
+                            </details>
+
+                        </li>
+
+                         <li>
+
+                            <details className="datails">
+
+                                <summary>A compra é confiável?</summary>
+
+                                <p className="p">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+
+                            </details>
+
+                        </li>
+
+                    </ul>
+ 
+                </section>
+
+                <section>
+
+                    <div className="about">
+                        
+                        <h2>Sobre a Quadrosframe</h2>
+
+                        <p className="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+                    </div>
+
+                    <div className="about">
+                        
+                        <h2>Sobre a Quadrosframe</h2>
+
+                        <p className="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+                    </div>
+
+                </section>
 
             </Div>
             
