@@ -1,5 +1,6 @@
+import myTheme from '@/packagesConfig/myTheme'
 import Document, {Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import { ServerStyleSheet, ThemeProvider } from 'styled-components'
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -35,10 +36,10 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head />
         <body>
-        
-          <Main />
-          <NextScript />
-         
+          <ThemeProvider theme={myTheme}>
+            <Main />
+            <NextScript />
+          </ThemeProvider>
         </body>
       </Html>
     )
